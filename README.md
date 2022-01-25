@@ -159,11 +159,11 @@ For the front-end to be complete, the following must be true:
 
 ## Deployment
 
-- [Netlify Deployment for create-react-app](./netlify-cra.md)
+- [Netlify Deployment for create-react-app](https://github.com/joinpursuit/budgeting-app-project-prompt/blob/main/netlify-cra.md)
 
 - [Netlify Set Up Continuous Deployment](https://github.com/joinpursuit/Netlify-CRA-Cont-Deploy-Guide)
 
-- [Deploy Express App to Heroku](./heroku-deployment.md)
+- [Deploy Express App to Heroku](https://github.com/joinpursuit/budgeting-app-project-prompt/blob/main/heroku-deployment.md)
 
 ## Bonus Ideas:
 
