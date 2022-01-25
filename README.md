@@ -2,9 +2,9 @@
 
 Create a backend API using Express that performs full CRUD on a single model, `transactions`. Then, using RESTful routes, connect it to a React app.
 
-![](./assets/index-page.png)
+![](https://github.com/joinpursuit/budgeting-app-project-prompt/blob/main/assets/index-page.png)
 
-![](./assets/new-page.png)
+![](https://github.com/joinpursuit/budgeting-app-project-prompt/raw/main/assets/new-page.png)
 
 ## Overview
 
