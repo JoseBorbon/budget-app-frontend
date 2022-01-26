@@ -28,6 +28,7 @@ const New = () => {
         <input
           type="date"
           id="date"
+          required
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -36,6 +37,7 @@ const New = () => {
         <input
           type="text"
           id="name"
+          required
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -44,6 +46,7 @@ const New = () => {
         <input
           type="number"
           id="amount"
+          required
           onChange={(e) =>
             setTransaction({
               ...transaction,
@@ -55,6 +58,7 @@ const New = () => {
         <input
           type="text"
           id="from"
+          required
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -63,6 +67,7 @@ const New = () => {
         <input
           type="text"
           id="source"
+          required
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -71,6 +76,7 @@ const New = () => {
         <input
           type="text"
           id="location"
+          required
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
