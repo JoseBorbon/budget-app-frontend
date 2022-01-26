@@ -1,0 +1,14 @@
+thead {
+  background-color: slateblue;
+  font-size: x-large;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.AllTransactions-total {
+  text-align: center;
+}
