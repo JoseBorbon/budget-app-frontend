@@ -1,0 +1,11 @@
+.Transaction-name {
+  padding: 10px;
+}
+
+.Transaction-amount {
+  float: right;
+}
+
+tr {
+  border-bottom: 2px solid gray;
+}
