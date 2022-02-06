@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import './Transaction.css';
+
 const Transaction = () => {
   const [transaction, setTransaction] = useState({});
   const navigate = useNavigate();
@@ -33,9 +35,18 @@ const Transaction = () => {
       <h3>Source: {transaction.source}</h3>
       <h3>Location: {transaction.location}</h3>
       <h3>Amount: {transaction.amount}</h3>
-      <button onClick={removeTransaction}>Delete</button>
-      <button onClick={() => navigate(`/transactions/${id}/edit`)}>Edit</button>
-      <button onClick={goBack}>Back</button>
+      <button className="actions" onClick={removeTransaction}>
+        Delete
+      </button>
+      <button
+        className="actions"
+        onClick={() => navigate(`/transactions/${id}/edit`)}
+      >
+        Edit
+      </button>
+      <button className="actions" onClick={goBack}>
+        Back
+      </button>
     </div>
   );
 };
