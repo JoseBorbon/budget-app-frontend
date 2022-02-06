@@ -24,10 +24,25 @@ const AllTransactions = () => {
   });
 
   const total = transactions.reduce((acc, { amount }) => acc + amount, 0);
+  let color;
+
+  switch (true) {
+    case total > 1000:
+      color = { color: 'green' };
+      break;
+    case total < 0:
+      color = { color: 'red' };
+      break;
+    default:
+      color = { color: 'black' };
+      break;
+  }
 
   return (
     <div>
-      <h1 className="AllTransactions-total">Bank Account Total: {total}</h1>
+      <h1 className="AllTransactions-total" style={color}>
+        Bank Account Total: {total}
+      </h1>
       <table>
         <thead>
           <tr>
