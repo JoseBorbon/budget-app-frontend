@@ -14,10 +14,14 @@ const New = () => {
     location: '',
   });
 
+  const goBack = () => {
+    navigate('/');
+  };
+
   const addTransaction = (evt) => {
     evt.preventDefault();
     axios.post(`${process.env.REACT_APP_API_URL}/transactions/`, transaction);
-    navigate('/');
+    setTimeout(goBack, 500);
   };
 
   return (

@@ -21,10 +21,14 @@ const EditTransaction = () => {
     };
   }, []);
 
+  const goBack = () => {
+    navigate('/');
+  };
+
   const editTransaction = (evt) => {
     evt.preventDefault();
     axios.put(URL, transaction);
-    navigate('/');
+    setTimeout(goBack, 500);
   };
 
   return (
@@ -35,6 +39,7 @@ const EditTransaction = () => {
         <input
           type="date"
           id="date"
+          value={transaction.date}
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -43,6 +48,7 @@ const EditTransaction = () => {
         <input
           type="text"
           id="name"
+          value={transaction.name}
           onChange={(e) => {
             setTransaction({ ...transaction, [e.target.id]: e.target.value });
           }}
@@ -51,6 +57,7 @@ const EditTransaction = () => {
         <input
           type="number"
           id="amount"
+          value={transaction.amount}
           onChange={(e) =>
             setTransaction({
               ...transaction,
@@ -62,6 +69,7 @@ const EditTransaction = () => {
         <input
           type="text"
           id="from"
+          value={transaction.from}
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -70,6 +78,7 @@ const EditTransaction = () => {
         <input
           type="text"
           id="source"
+          value={transaction.source}
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }
@@ -78,6 +87,7 @@ const EditTransaction = () => {
         <input
           type="text"
           id="location"
+          value={transaction.location}
           onChange={(e) =>
             setTransaction({ ...transaction, [e.target.id]: e.target.value })
           }

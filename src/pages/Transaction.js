@@ -23,7 +23,7 @@ const Transaction = () => {
 
   const removeTransaction = () => {
     axios.delete(URL);
-    goBack();
+    setTimeout(goBack, 500);
   };
 
   return (
